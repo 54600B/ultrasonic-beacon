@@ -1,0 +1,109 @@
+Circuit: * C:\roboter\2016_common\et\projects\ultrasonic_beacon\V3\amplifier\mc34063\MC34063_buck.asc
+
+Per .tran options, skipping operating point for transient analysis.
+.step rs=100 cs=1e-011
+.step rs=200 cs=1e-011
+.step rs=400 cs=1e-011
+.step rs=800 cs=1e-011
+.step rs=1600 cs=1e-011
+.step rs=3200 cs=1e-011
+.step rs=6400 cs=1e-011
+.step rs=10000 cs=1e-011
+.step rs=100 cs=2e-011
+.step rs=200 cs=2e-011
+.step rs=400 cs=2e-011
+.step rs=800 cs=2e-011
+.step rs=1600 cs=2e-011
+.step rs=3200 cs=2e-011
+.step rs=6400 cs=2e-011
+.step rs=10000 cs=2e-011
+.step rs=100 cs=4e-011
+.step rs=200 cs=4e-011
+.step rs=400 cs=4e-011
+.step rs=800 cs=4e-011
+.step rs=1600 cs=4e-011
+.step rs=3200 cs=4e-011
+.step rs=6400 cs=4e-011
+.step rs=10000 cs=4e-011
+.step rs=100 cs=8e-011
+.step rs=200 cs=8e-011
+.step rs=400 cs=8e-011
+.step rs=800 cs=8e-011
+.step rs=1600 cs=8e-011
+.step rs=3200 cs=8e-011
+.step rs=6400 cs=8e-011
+.step rs=10000 cs=8e-011
+.step rs=100 cs=1.6e-010
+.step rs=200 cs=1.6e-010
+.step rs=400 cs=1.6e-010
+.step rs=800 cs=1.6e-010
+.step rs=1600 cs=1.6e-010
+.step rs=3200 cs=1.6e-010
+.step rs=6400 cs=1.6e-010
+.step rs=10000 cs=1.6e-010
+.step rs=100 cs=3.2e-010
+.step rs=200 cs=3.2e-010
+.step rs=400 cs=3.2e-010
+.step rs=800 cs=3.2e-010
+.step rs=1600 cs=3.2e-010
+.step rs=3200 cs=3.2e-010
+.step rs=6400 cs=3.2e-010
+.step rs=10000 cs=3.2e-010
+.step rs=100 cs=6.4e-010
+.step rs=200 cs=6.4e-010
+.step rs=400 cs=6.4e-010
+.step rs=800 cs=6.4e-010
+.step rs=1600 cs=6.4e-010
+.step rs=3200 cs=6.4e-010
+.step rs=6400 cs=6.4e-010
+.step rs=10000 cs=6.4e-010
+.step rs=100 cs=1.28e-009
+.step rs=200 cs=1.28e-009
+.step rs=400 cs=1.28e-009
+.step rs=800 cs=1.28e-009
+.step rs=1600 cs=1.28e-009
+.step rs=3200 cs=1.28e-009
+.step rs=6400 cs=1.28e-009
+.step rs=10000 cs=1.28e-009
+.step rs=100 cs=2.56e-009
+.step rs=200 cs=2.56e-009
+.step rs=400 cs=2.56e-009
+.step rs=800 cs=2.56e-009
+.step rs=1600 cs=2.56e-009
+.step rs=3200 cs=2.56e-009
+.step rs=6400 cs=2.56e-009
+.step rs=10000 cs=2.56e-009
+.step rs=100 cs=5.12e-009
+.step rs=200 cs=5.12e-009
+.step rs=400 cs=5.12e-009
+.step rs=800 cs=5.12e-009
+.step rs=1600 cs=5.12e-009
+.step rs=3200 cs=5.12e-009
+.step rs=6400 cs=5.12e-009
+.step rs=10000 cs=5.12e-009
+.step rs=100 cs=1e-008
+.step rs=200 cs=1e-008
+.step rs=400 cs=1e-008
+.step rs=800 cs=1e-008
+.step rs=1600 cs=1e-008
+.step rs=3200 cs=1e-008
+.step rs=6400 cs=1e-008
+.step rs=10000 cs=1e-008
+
+Date: Wed Feb 14 20:06:33 2018
+Total elapsed time: 2875.306 seconds.
+
+tnom = 27
+temp = 27
+method = Gear
+totiter = 1756183
+traniter = 1756183
+tranpoints = 807311
+accept = 777071
+rejected = 30240
+matrix size = 42
+fillins = 41
+Matrix Compiler1: 4.96 KB object code size  1.7/1.2/[0.9]
+Matrix Compiler2: 4.29 KB object code size  0.8/1.0/[0.7]
+
+
