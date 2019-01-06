@@ -22,7 +22,7 @@ function varargout = matlab_playground_gui(varargin)
 
 % Edit the above text to modify the response to help matlab_playground_gui
 
-% Last Modified by GUIDE v2.5 14-Jun-2018 19:55:38
+% Last Modified by GUIDE v2.5 06-Jan-2019 17:15:39
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -1130,11 +1130,7 @@ function pushbuttonSetDacOutput_Callback(hObject, eventdata, handles)
 % hObject    handle to pushbuttonSetDacOutput (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-if handles.serialPortOpen == true
-    
-    fwrite(handles.serialPort, 45); %enable debug interface
-    pause(0.2);
-    
+if handles.serialPortOpen == true    
     dac_channel = get(handles.popupmenuDacChannel, 'Value');
     waveform_nr = get(handles.popupmenuWaveform, 'Value');
     message = dac_channel*64+waveform_nr;
@@ -1497,3 +1493,20 @@ function popupmenuRangingDisplay_CreateFcn(hObject, eventdata, handles)
 if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
     set(hObject,'BackgroundColor','white');
 end
+
+
+% --- Executes on button press in checkboxEnableWaveformDebug.
+function checkboxEnableWaveformDebug_Callback(hObject, eventdata, handles)
+% hObject    handle to checkboxEnableWaveformDebug (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of checkboxEnableWaveformDebug
+if handles.serialPortOpen == true
+    if get(hObject,'Value') == 1.0
+        fwrite(handles.serialPort, 45); %enable waveform debug via dac or uart
+    else
+        fwrite(handles.serialPort, 46); %disable waveform debug via dac or uart
+    end
+end    
+guidata(hObject, handles);
